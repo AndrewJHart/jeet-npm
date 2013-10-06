@@ -61,7 +61,7 @@ else if tags.command is "create" or tags.create is true
     tags.query = "jeet" if tags.query is ""
     if not tags.ignore
         sjson = require "../node_modules/stylus/package.json"
-        check = [jjson, ajson, sjson]
+        check = [jjson, sjson]
         npm = "http://registry.npmjs.org/"
 
         (lookup = () ->
