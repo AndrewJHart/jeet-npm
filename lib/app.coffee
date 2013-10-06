@@ -60,7 +60,6 @@ if tags.command is "watch"
 else if tags.command is "create" or tags.create is true
     tags.query = "jeet" if tags.query is ""
     if not tags.ignore
-        ajson = require "../node_modules/axis-css/package.json"
         sjson = require "../node_modules/stylus/package.json"
         check = [jjson, ajson, sjson]
         npm = "http://registry.npmjs.org/"
